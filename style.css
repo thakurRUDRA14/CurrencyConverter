@@ -27,7 +27,7 @@ body {
 .container {
     padding: 2rem;
     min-height: 45vh;
-    width: 60vh;
+    width: 35rem;
     background-color: #ffffffa6;
     backdrop-filter: blur(10px);
     border-radius: 30px;
