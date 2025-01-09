@@ -73,10 +73,14 @@ window.addEventListener("load",()=>{
 })
 
 swap.addEventListener('click',(e)=>{
-    console.log("hekod");
-    let temp = fromcurr;
-    fromcurr = tocurr;
-    tocurr= temp;
+    let tempValue = fromcurr.value;
+    fromcurr.value = tocurr.value; 
+    tocurr.value = tempValue;      
+    
+   
+    updateFlag(fromcurr);
+    updateFlag(tocurr);
+    
     
     updateExchangeRate();
 })
